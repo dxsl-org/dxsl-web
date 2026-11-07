@@ -50,12 +50,9 @@ jobs:
             console.log('Site integrity check: PASSED');
           "
 
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'dxsl-web' }}
-          directory: .
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          wranglerVersion: '3'
+          command: pages deploy . --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME || 'dxsl-web' }} --branch=${{ github.ref_name }} --commit-dirty=true
