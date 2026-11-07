@@ -1,0 +1,23 @@
+# Cloudflare Pages Custom Headers Configuration
+# Documentation: https://developers.cloudflare.com/pages/configuration/headers/
+
+# Global Security Headers for all paths
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Aggressive cache for static assets (CSS, JS, SVG, Images)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML documents: immediate revalidation to get latest updates
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/vi/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/en/*
+  Cache-Control: public, max-age=0, must-revalidate

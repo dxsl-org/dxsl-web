@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DXSL | Tổ chức Nghiên cứu Công nghệ, Chuyển đổi số & Mã nguồn mở</title>
+  
+  <meta name="description" content="DXSL là tổ chức phi lợi nhuận nghiên cứu công nghệ, chuyển đổi số và phát triển phần mềm mã nguồn mở: Hệ điều hành Cellos, Bộ gõ Buttre, Trợ lý ảo Haily.">
+  <meta name="keywords" content="DXSL, Cellos OS, Buttre IME, Haily AI, ma nguon mo, he dieu hanh, bo go tieng Viet, tro ly ca nhan, chuyen doi so, phi loi nhuan">
+  <meta name="author" content="DXSL Organization">
+  <meta name="theme-color" content="#05080f">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DXSL | Tổ chức Nghiên cứu Công nghệ & Chuyển đổi số">
+  <meta property="og:description" content="Nghiên cứu công nghệ nền tảng, hệ điều hành Cellos, bộ gõ Buttre, trợ lý Haily và phụng sự cộng đồng mã nguồn mở tự do.">
+  <meta property="og:url" content="https://dxsl.org/vi/">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo-placeholder.svg">
+</head>
+<body>
+
+  <!-- Tech Interactive Canvas Background -->
+  <canvas id="tech-canvas" aria-label="Interactive cybernetic background"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Menu chính">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="nav-brand">
+          <!-- [LOGO DXSL]: Thay đường dẫn file ảnh logo của anh vào đây khi có file -->
+          <img src="../assets/images/logo-placeholder.svg" alt="DXSL Logo" class="nav-brand-img">
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">Về DXSL</a></li>
+          <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+          <li><a href="#research" class="nav-link">Nghiên cứu &amp; CĐS</a></li>
+          <li><a href="#opensource" class="nav-link">Mã nguồn mở</a></li>
+          <li><a href="donate.html" class="nav-link">Ủng hộ</a></li>
+        </ul>
+
+        <!-- Right Actions: Language Switch & Donate CTA -->
+        <div class="nav-actions">
+          <a href="../en/index.html" class="lang-switch-btn" title="Chuyển sang tiếng Anh / Switch to English">
+            <span aria-hidden="true">🌐</span>
+            <span>EN</span>
+          </a>
+
+          <a href="donate.html" class="btn btn-sm btn-kofi">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+            </svg>
+            <span>Tài trợ</span>
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="mobile-toggle" aria-label="Mở menu" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        
+        <div class="hero-badge">
+          <span class="badge badge-pulse">TỔ CHỨC CÔNG NGHỆ PHI LỢI NHUẬN // NON-PROFIT LAB</span>
+        </div>
+
+        <h1 class="hero-title">
+          Nghiên cứu công nghệ nền tảng.<br>
+          <span class="gradient-text">Kiến tạo tương lai số tự do.</span>
+        </h1>
+
+        <p class="hero-desc">
+          DXSL là tổ chức phi lợi nhuận hoạt động vì sự tiến bộ của khoa học công nghệ, thúc đẩy chuyển đổi số thực tiễn và phát triển hệ sinh thái phần mềm nguồn mở phong phú phục vụ xã hội.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">
+            <span>Khám phá Hệ sinh thái</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+
+          <a href="#opensource" class="btn btn-secondary">
+            <span>Đóng góp Mã nguồn mở</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="12 8 8 12 12 16 12 8"></polygon>
+            </svg>
+          </a>
+
+          <a href="donate.html" class="btn btn-kofi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+            </svg>
+            <span>Ủng hộ qua Ko-fi</span>
+          </a>
+        </div>
+
+        <!-- Metric highlights -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Phi lợi nhuận &amp; Mã nguồn mở</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Core OS</div>
+            <div class="stat-label">Hệ điều hành Cellos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">0 Track</div>
+            <div class="stat-label">Bảo mật &amp; Không Telemetry</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Community</div>
+            <div class="stat-label">Cộng đồng tự do &amp; Bình đẳng</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Pillars Section -->
+  <section id="about" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// TÔN CHỈ &amp; SỨ MỆNH</span>
+        <h2 class="section-title">Tại sao DXSL tồn tại?</h2>
+        <p class="section-desc">
+          Trong kỷ nguyên số, chúng tôi tin rằng công nghệ cốt lõi và dữ liệu phải phụng sự con người, không bị chi phối bởi các tập đoàn độc quyền hay lợi ích thương mại vị kỷ.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <span class="pillar-num">01 / FOUNDATION</span>
+          <h3 class="pillar-title">Nghiên cứu Công nghệ Nền tảng</h3>
+          <p class="pillar-desc">
+            Tập trung giải quyết các bài toán gốc: từ kiến trúc hệ điều hành, trình xử lý ngôn ngữ đầu vào, đến các mô hình trợ lý trí tuệ nhân tạo cá nhân hóa hoạt động độc lập và bảo vệ dữ liệu.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">02 / TRANSFORMATION</span>
+          <h3 class="pillar-title">Chuyển đổi số Thực chất</h3>
+          <p class="pillar-desc">
+            Không chạy theo xu hướng tiếp thị, DXSL nghiên cứu các mô hình chuyển đổi số bền vững, chi phí bản quyền 0 đồng nhằm hỗ trợ trường học, viện nghiên cứu và các tổ chức xã hội.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">03 / SOVEREIGNTY</span>
+          <h3 class="pillar-title">Chủ quyền số &amp; Mã nguồn mở</h3>
+          <p class="pillar-desc">
+            Mọi dòng mã do DXSL phát triển đều minh bạch, tự do kiểm tra và có thể phân phối lại. Chúng tôi xây dựng sản phẩm để người dùng thực sự sở hữu thiết bị và dữ liệu của chính mình.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section id="products" class="section" style="background: rgba(9, 13, 22, 0.4);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// HỆ SINH THÁI SẢN PHẨM</span>
+        <h2 class="section-title">Các dự án trọng điểm của DXSL</h2>
+        <p class="section-desc">
+          Từ hệ thống hạt nhân đến ứng dụng người dùng cuối, các sản phẩm của DXSL được phát triển với tiêu chuẩn kỹ thuật cao, tính ổn định và tôn trọng quyền riêng tư.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        
+        <!-- Product 1: Cellos -->
+        <article class="product-card">
+          <div>
+            <div class="product-header">
+              <div class="product-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="badge">HỆ ĐIỀU HÀNH</span>
+            </div>
+
+            <h3 class="product-name">Cellos</h3>
+            <div class="product-category">Next-Gen Operating System</div>
+            <p class="product-desc">
+              Hệ điều hành thế hệ mới với triết lý kiến trúc an toàn, tối ưu hiệu năng phần cứng, giảm thiểu bề mặt tấn công và tuyệt đối không cài đặt cơ chế giám sát hay thu thập dữ liệu ngầm.
+            </p>
+
+            <ul class="product-features">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Kiến trúc Microkernel / Hybrid cô lập an toàn</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero Telemetry &amp; Bảo vệ quyền riêng tư</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tương thích đa kiến trúc (x86_64, ARM, RISC-V)</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cơ chế quản lý bộ nhớ hiện đại &amp; Khởi động siêu tốc</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer">
+            <span class="product-status">Phiên bản: Research / Alpha</span>
+            <a href="#opensource" class="product-link">
+              <span>Mã nguồn &amp; Specs</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 2: Buttre -->
+        <article class="product-card card-violet">
+          <div>
+            <div class="product-header">
+              <div class="product-icon-wrap violet">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-violet">BỘ GÕ TIẾNG VIỆT</span>
+            </div>
+
+            <h3 class="product-name">Buttre</h3>
+            <div class="product-category">Modern Vietnamese IME</div>
+            <p class="product-desc">
+              Bộ gõ tiếng Việt hiện đại, thông minh, cực nhẹ dành cho người dùng và lập trình viên. Không lỗi gạch chân khó chịu, không dính phím trong terminal, tối ưu trải nghiệm gõ phím.
+            </p>
+
+            <ul class="product-features">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hoàn toàn không ghi nhận phím (No Keylogger)</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hỗ trợ đa dạng: Telex, VNI, Simple Telex</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tối ưu cho IDE lập trình và terminal console</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Đa nền tảng: Linux, Windows, macOS, Web</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer">
+            <span class="product-status">Phiên bản: Stable v1.x</span>
+            <a href="#opensource" class="product-link">
+              <span>Tải về &amp; Hướng dẫn</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 3: Haily -->
+        <article class="product-card card-emerald">
+          <div>
+            <div class="product-header">
+              <div class="product-icon-wrap emerald">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <span class="badge badge-emerald">TRỢ LÝ CÁ NHÂN AI</span>
+            </div>
+
+            <h3 class="product-name">Haily</h3>
+            <div class="product-category">Personal AI Companion</div>
+            <p class="product-desc">
+              Trợ lý cá nhân thông minh định hướng bảo vệ quyền riêng tư (Privacy-first). Hỗ trợ tự động hóa luồng công việc, nghiên cứu tài liệu, lập trình và tư vấn dựa trên mô hình mở.
+            </p>
+
+            <ul class="product-features">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Chạy mô hình cục bộ (Local-first) hoặc Hybrid</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Không huấn luyện thương mại trên dữ liệu người dùng</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hệ sinh thái kỹ năng và công cụ mở rộng (Extensible)</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tương thích các giao thức ngữ cảnh &amp; Agent tiên tiến</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer">
+            <span class="product-status">Phiên bản: Beta Preview</span>
+            <a href="#opensource" class="product-link">
+              <span>Trải nghiệm Haily</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research & Digital Transformation -->
+  <section id="research" class="section">
+    <div class="container">
+      
+      <div class="research-layout">
+        
+        <div>
+          <span class="section-tag">// NGHIÊN CỨU &amp; CHUYỂN ĐỔI SỐ</span>
+          <h2 class="section-title">Nghiên cứu vị nhân sinh, chuyển đổi số thực tế</h2>
+          <p class="section-desc" style="margin-bottom: 2rem;">
+            Chuyển đổi số không chỉ là mua sắm phần mềm thương mại đắt đỏ. Tại DXSL, chúng tôi xây dựng các giải pháp tự chủ, mã nguồn mở giúp tổ chức tối ưu hóa vận hành mà không phụ thuộc vào nhà cung cấp độc quyền (Vendor lock-in).
+          </p>
+
+          <div class="research-card-list">
+            
+            <div class="research-item">
+              <h4>
+                <span class="text-cyan">◆</span>
+                Hạ tầng Số Hóa Mở (Open Digital Infrastructure)
+              </h4>
+              <p>Phát triển các mô hình lưu trữ phân tán, điện toán đám mây tự lưu trữ (self-hosted) và giao thức bảo mật cao cho cơ quan phi lợi nhuận.</p>
+            </div>
+
+            <div class="research-item">
+              <h4>
+                <span class="text-violet">◆</span>
+                Trí tuệ Nhân tạo Biên &amp; Cục bộ (Edge AI &amp; Privacy)
+              </h4>
+              <p>Nghiên cứu tối ưu hóa các mô hình ngôn ngữ lớn (SLMs/LLMs) để chạy mượt mà trên phần cứng phổ thông mà không cần gửi dữ liệu lên máy chủ nước ngoài.</p>
+            </div>
+
+            <div class="research-item">
+              <h4>
+                <span class="text-emerald">◆</span>
+                Hỗ trợ Chuyển đổi số cho Giáo dục &amp; Y tế Cộng đồng
+              </h4>
+              <p>Tư vấn, đào tạo và chuyển giao các nền tảng nguồn mở miễn phí cho các trường học, thư viện và tổ chức thiện nguyện.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Terminal Concept Preview -->
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">dxsl-terminal — bash — 80x24</span>
+            <span></span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">dxsl --info</span></div>
+            <div class="t-res">
+              [ORGANIZATION]  : DXSL Non-Profit Research Lab<br>
+              [STATUS]        : ACTIVE &bull; REGISTERED FOSS INITIATIVE<br>
+              [GOAL]          : Foundational Tech &bull; Digital Sovereignty<br>
+              [LICENSE]       : MIT / Apache-2.0 / Free Culture
+            </div>
+            <br>
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">dxsl list-projects</span></div>
+            <div class="t-res">
+              &gt; <span class="t-success">Cellos</span>    [OS]      - Microkernel based safe computing environment<br>
+              &gt; <span class="t-success">Buttre</span>    [IME]     - Zero-telemetry Vietnamese smart input engine<br>
+              &gt; <span class="t-success">Haily</span>     [AI]      - Privacy-focused personal cognitive assistant<br>
+              &gt; <span class="t-highlight">DXSL-Labs</span> [R&amp;D]     - Digital transformation open toolsets
+            </div>
+            <br>
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">dxsl get-involved --donate</span></div>
+            <div class="t-res">
+              &gt; Direct Ko-fi : <span class="t-highlight">https://ko-fi.com/dxsl_org</span><br>
+              &gt; 100% funds dedicated to open research &amp; public server hosting.
+            </div>
+            <br>
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">_</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Open Source & Community Manifesto -->
+  <section id="opensource" class="section" style="background: rgba(9, 13, 22, 0.4);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// MÃ NGUỒN MỞ &amp; CỘNG ĐỒNG</span>
+        <h2 class="section-title">Cùng nhau kiến tạo mã nguồn tự do</h2>
+        <p class="section-desc">
+          Sức mạnh của mã nguồn mở nằm ở trí tuệ tập thể. DXSL luôn chào đón sự tham gia của các kỹ sư, nhà nghiên cứu, nhà thiết kế và người dùng tâm huyết.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <h3 class="pillar-title">1. Đóng góp Mã nguồn &amp; Sửa lỗi</h3>
+          <p class="pillar-desc">
+            Tham gia phát triển nhân hệ điều hành Cellos, hoàn thiện engine gõ phím Buttre hoặc mở rộng kỹ năng cho Haily trên kho lưu trữ mã nguồn của tổ chức.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <h3 class="pillar-title">2. Viết Tài liệu &amp; Phản biện</h3>
+          <p class="pillar-desc">
+            Viết hướng dẫn cài đặt, biên dịch tài liệu tiếng Việt / tiếng Anh, viết báo cáo thử nghiệm bảo mật và kiểm thử độc lập cho các dự án.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <h3 class="pillar-title">3. Lan tỏa &amp; Ứng dụng Thực tiễn</h3>
+          <p class="pillar-desc">
+            Ứng dụng các sản phẩm của DXSL vào công việc hàng ngày, trường học hoặc tổ chức của bạn, đồng thời gửi phản hồi để đội ngũ ngày càng hoàn thiện.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Donate Callout Banner -->
+  <section id="donate" class="section">
+    <div class="container">
+      
+      <div class="donate-highlight-box">
+        <div class="donate-content">
+          <span class="badge badge-violet" style="margin-bottom: 1rem;">ĐỒNG HÀNH CÙNG DXSL</span>
+          
+          <h2 class="donate-title">
+            Ủng hộ chúng tôi trên con đường <span class="gradient-text">Công nghệ Vị nhân sinh</span>
+          </h2>
+
+          <p class="donate-desc">
+            DXSL hoạt động hoàn toàn bằng tinh thần cống hiến phi lợi nhuận. Sự ủng hộ tài chính của bạn giúp chúng tôi chi trả chi phí máy chủ, hạ tầng thử nghiệm Cellos, duy trì Buttre và nghiên cứu Haily miễn phí cho hàng triệu người.
+          </p>
+
+          <div class="donate-tiers-grid">
+            <div class="donate-tier-card">
+              <div class="tier-title">☕ Một tách Cà phê</div>
+              <div class="tier-desc">Tiếp thêm năng lượng cho đội ngũ lập trình viên đêm muộn hoàn thiện bản build.</div>
+            </div>
+            <div class="donate-tier-card">
+              <div class="tier-title">🖥️ Máy chủ 1 tháng</div>
+              <div class="tier-desc">Duy trì hạ tầng build CI/CD và băng thông phân phối phần mềm miễn phí.</div>
+            </div>
+            <div class="donate-tier-card">
+              <div class="tier-title">🚀 Nhà bảo trợ R&amp;D</div>
+              <div class="tier-desc">Tài trợ thiết bị phần cứng để thử nghiệm hệ điều hành Cellos và mô hình AI.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            <a href="https://ko-fi.com/dxsl_org" target="_blank" rel="noopener noreferrer" class="btn btn-kofi">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+              </svg>
+              <span>Ủng hộ ngay trên Ko-fi (ko-fi.com/dxsl_org)</span>
+            </a>
+
+            <a href="donate.html" class="btn btn-secondary">
+              <span>Xem chi tiết Chính sách Minh bạch &amp; Tài trợ</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Bio -->
+        <div class="footer-bio">
+          <a href="index.html">
+            <!-- [LOGO DXSL]: Thay đường dẫn file ảnh logo vào đây -->
+            <img src="../assets/images/logo-placeholder.svg" alt="DXSL Logo" style="height: 38px;">
+          </a>
+          <p>
+            Tổ chức phi lợi nhuận nghiên cứu công nghệ, chuyển đổi số và phát triển phần mềm nguồn mở tự do phục vụ lợi ích cộng đồng.
+          </p>
+          <div class="badge badge-emerald">
+            <span>HOẠT ĐỘNG PHI LỢI NHUẬN</span>
+          </div>
+        </div>
+
+        <!-- Col 1: Products -->
+        <div>
+          <h4 class="footer-heading">Sản phẩm cốt lõi</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Hệ điều hành Cellos</a></li>
+            <li><a href="#products">Bộ gõ tiếng Việt Buttre</a></li>
+            <li><a href="#products">Trợ lý cá nhân Haily</a></li>
+            <li><a href="#research">Bộ công cụ CĐS DXSL</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Organization -->
+        <div>
+          <h4 class="footer-heading">Tổ chức</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Về DXSL</a></li>
+            <li><a href="#research">Định hướng nghiên cứu</a></li>
+            <li><a href="#opensource">Mã nguồn mở</a></li>
+            <li><a href="donate.html">Tài trợ &amp; Minh bạch</a></li>
+            <li><a href="../index.html">Chọn ngôn ngữ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Support & Donate -->
+        <div>
+          <h4 class="footer-heading">Kênh ủng hộ</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+            Ủng hộ chúng tôi duy trì hạ tầng máy chủ và nghiên cứu mở:
+          </p>
+          <a href="https://ko-fi.com/dxsl_org" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-kofi" style="width: 100%; justify-content: center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+            </svg>
+            <span>Ủng hộ qua Ko-fi</span>
+          </a>
+          <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono);">
+            Link: ko-fi.com/dxsl_org
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; DXSL Organization. Toàn bộ mã nguồn và tài liệu tuân thủ giấy phép nguồn mở tự do (MIT / Apache 2.0 / CC-BY-SA).
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="donate.html">Tài trợ</a>
+          <a href="../en/index.html">English</a>
+          <a href="../index.html">Cổng Gateway</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/tech-canvas.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

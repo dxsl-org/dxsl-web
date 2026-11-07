@@ -1,0 +1,10 @@
+# Cloudflare Pages Redirects
+# Documentation: https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Normalise language prefixes
+/vi       /vi/             301
+/en       /en/             301
+
+# Quick convenience shortcuts
+/donate   /vi/donate.html  302
+/kofi     https://ko-fi.com/dxsl_org 302

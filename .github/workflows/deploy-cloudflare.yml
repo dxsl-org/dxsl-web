@@ -1,0 +1,61 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to Cloudflare Pages
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Website Integrity
+        run: |
+          node -e "
+            const fs = require('fs');
+            const requiredFiles = [
+              'index.html',
+              'vi/index.html',
+              'vi/donate.html',
+              'en/index.html',
+              'en/donate.html',
+              'assets/css/style.css',
+              'assets/js/tech-canvas.js',
+              'assets/js/main.js'
+            ];
+            const missing = requiredFiles.filter(file => !fs.existsSync(file));
+            if (missing.length > 0) {
+              console.error('Critical files missing:', missing);
+              process.exit(1);
+            }
+            console.log('Site integrity check: PASSED');
+          "
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME || 'dxsl-web' }}
+          directory: .
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: '3'

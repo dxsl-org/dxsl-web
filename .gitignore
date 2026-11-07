@@ -1,0 +1,24 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives & Temporary files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.tmp
+
+# Editor & IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Logs (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

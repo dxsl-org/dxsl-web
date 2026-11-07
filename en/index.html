@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DXSL | Non-Profit Technology Research, Digital Transformation &amp; Open Source</title>
+  
+  <meta name="description" content="DXSL is a non-profit foundation dedicated to foundational computing research, practical digital transformation, and open-source software: Cellos OS, Buttre IME, Haily AI Assistant.">
+  <meta name="keywords" content="DXSL, Cellos OS, Buttre IME, Haily AI, open source foundation, non-profit technology, digital transformation, operating system, Vietnamese input method, private AI">
+  <meta name="author" content="DXSL Organization">
+  <meta name="theme-color" content="#05080f">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DXSL | Non-Profit Technology &amp; Digital Transformation Lab">
+  <meta property="og:description" content="Pioneering foundational computing, Cellos Operating System, Buttre Vietnamese IME, Haily AI Companion, and serving the public open-source commons.">
+  <meta property="og:url" content="https://dxsl.org/en/">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo-placeholder.svg">
+</head>
+<body>
+
+  <!-- Tech Interactive Canvas Background -->
+  <canvas id="tech-canvas" aria-label="Interactive cybernetic background"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main Navigation">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="nav-brand">
+          <!-- [DXSL LOGO]: Replace logo placeholder path when ready -->
+          <img src="../assets/images/logo-placeholder.svg" alt="DXSL Logo" class="nav-brand-img">
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About DXSL</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#research" class="nav-link">Research &amp; DX</a></li>
+          <li><a href="#opensource" class="nav-link">Open Source</a></li>
+          <li><a href="donate.html" class="nav-link">Donate</a></li>
+        </ul>
+
+        <!-- Right Actions: Language Switch & Donate CTA -->
+        <div class="nav-actions">
+          <a href="../vi/index.html" class="lang-switch-btn" title="Chuyển sang Tiếng Việt / Switch to Vietnamese">
+            <span aria-hidden="true">🇻🇳</span>
+            <span>VI</span>
+          </a>
+
+          <a href="donate.html" class="btn btn-sm btn-kofi">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+            </svg>
+            <span>Support</span>
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        
+        <div class="hero-badge">
+          <span class="badge badge-pulse">NON-PROFIT RESEARCH LAB // OPEN SOURCE COMMONS</span>
+        </div>
+
+        <h1 class="hero-title">
+          Foundational Tech Research.<br>
+          <span class="gradient-text">Architecting a Free Digital Future.</span>
+        </h1>
+
+        <p class="hero-desc">
+          DXSL is an independent non-profit foundation dedicated to computer science research, meaningful digital transformation, and engineering transparent open-source software for the global public good.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">
+            <span>Explore Ecosystem</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+
+          <a href="#opensource" class="btn btn-secondary">
+            <span>Contribute to FOSS</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="12 8 8 12 12 16 12 8"></polygon>
+            </svg>
+          </a>
+
+          <a href="donate.html" class="btn btn-kofi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+            </svg>
+            <span>Support via Ko-fi</span>
+          </a>
+        </div>
+
+        <!-- Metric Highlights -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Non-Profit &amp; Open Source</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Core OS</div>
+            <div class="stat-label">Cellos Operating System</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">0 Track</div>
+            <div class="stat-label">Privacy &amp; Zero Telemetry</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Free</div>
+            <div class="stat-label">Accessible to Everyone</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Pillars Section -->
+  <section id="about" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// MISSION &amp; PHILOSOPHY</span>
+        <h2 class="section-title">Why DXSL Exists</h2>
+        <p class="section-desc">
+          We believe foundational digital tools, operating environments, and language systems should be public infrastructure—not monopolies governed by private surveillance and extractive vendor lock-in.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <span class="pillar-num">01 / FOUNDATION</span>
+          <h3 class="pillar-title">Foundational Systems Research</h3>
+          <p class="pillar-desc">
+            Tackling fundamental problems from the ground up: next-generation OS kernel design, ergonomic multilingual text processors, and local-first sovereign cognitive architectures.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">02 / TRANSFORMATION</span>
+          <h3 class="pillar-title">Practical Digital Transformation</h3>
+          <p class="pillar-desc">
+            Moving beyond commercial marketing buzzwords to deliver real-world digital sovereignty, zero-cost open toolchains, and sustainable workflows for public institutions and civic groups.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">03 / SOVEREIGNTY</span>
+          <h3 class="pillar-title">Digital Autonomy &amp; FOSS</h3>
+          <p class="pillar-desc">
+            Every line of code authored by DXSL is auditable, unencumbered by restrictive licenses, and built to empower users with full custody over their hardware and personal data.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section id="products" class="section" style="background: rgba(9, 13, 22, 0.4);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// PRODUCT ECOSYSTEM</span>
+        <h2 class="section-title">Flagship Initiatives</h2>
+        <p class="section-desc">
+          From low-level systems programming to desktop productivity and intelligent cognitive agents, explore our active open-source portfolio.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        
+        <!-- Product 1: Cellos -->
+        <article class="product-card">
+          <div>
+            <div class="product-header">
+              <div class="product-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="badge">OPERATING SYSTEM</span>
+            </div>
+
+            <h3 class="product-name">Cellos</h3>
+            <div class="product-category">Next-Gen Operating System</div>
+            <p class="product-desc">
+              A high-security, microkernel-based operating system engineered for minimal attack surface, optimal memory footprint, hardware independence, and absolute zero telemetry.
+            </p>
+
+            <ul class="product-features">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Microkernel / Hybrid secure process isolation</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero telemetry &amp; strict hardware privacy</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-architecture: x86_64, ARM, RISC-V</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Predictable memory management &amp; ultra-fast boot</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer">
+            <span class="product-status">Status: Research / Alpha</span>
+            <a href="#opensource" class="product-link">
+              <span>Source &amp; Specs</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 2: Buttre -->
+        <article class="product-card card-violet">
+          <div>
+            <div class="product-header">
+              <div class="product-icon-wrap violet">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-violet">INPUT METHOD</span>
+            </div>
+
+            <h3 class="product-name">Buttre</h3>
+            <div class="product-category">Modern Vietnamese IME</div>
+            <p class="product-desc">
+              Lightweight, ergonomic, modern Vietnamese input engine tailored for developers and power users. Solves cursor-jump bugs and terminal key-swallowing natively.
+            </p>
+
+            <ul class="product-features">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero keylogging &amp; strictly local keystroke parsing</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Telex, VNI, and Simple Telex engines</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Glitch-free inside code editors, CLI &amp; terminals</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cross-platform: Linux, Windows, macOS, Web</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer">
+            <span class="product-status">Status: Stable Release v1.x</span>
+            <a href="#opensource" class="product-link">
+              <span>Downloads &amp; Docs</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 3: Haily -->
+        <article class="product-card card-emerald">
+          <div>
+            <div class="product-header">
+              <div class="product-icon-wrap emerald">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <span class="badge badge-emerald">AI ASSISTANT</span>
+            </div>
+
+            <h3 class="product-name">Haily</h3>
+            <div class="product-category">Personal AI Companion</div>
+            <p class="product-desc">
+              A privacy-centric personal AI assistant running on local hardware or private instances. Accelerates research workflows, coding, task automation, and private knowledge synthesis.
+            </p>
+
+            <ul class="product-features">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Local-first architecture &amp; sovereign offline mode</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero commercial training on personal interactions</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Modular skill system &amp; extensible protocol tools</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Context engineering &amp; autonomous task capability</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer">
+            <span class="product-status">Status: Beta Preview</span>
+            <a href="#opensource" class="product-link">
+              <span>Explore Haily</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research & Digital Transformation -->
+  <section id="research" class="section">
+    <div class="container">
+      
+      <div class="research-layout">
+        
+        <div>
+          <span class="section-tag">// RESEARCH &amp; DIGITAL TRANSFORMATION</span>
+          <h2 class="section-title">Human-Centric Research, Practical Impact</h2>
+          <p class="section-desc" style="margin-bottom: 2rem;">
+            True digital transformation is not about buying proprietary software subscriptions. At DXSL, we build sovereign, open infrastructure enabling organizations to operate transparently without predatory vendor lock-in.
+          </p>
+
+          <div class="research-card-list">
+            
+            <div class="research-item">
+              <h4>
+                <span class="text-cyan">◆</span>
+                Open Digital Infrastructure
+              </h4>
+              <p>Designing decentralized storage networks, self-hosted operational backbones, and zero-trust security profiles for civic and educational institutions.</p>
+            </div>
+
+            <div class="research-item">
+              <h4>
+                <span class="text-violet">◆</span>
+                Edge AI &amp; Private Cognitive Models
+              </h4>
+              <p>Benchmarking Small Language Models (SLMs) and efficient quantizations to run high-utility tasks on commodity consumer hardware without external data leakage.</p>
+            </div>
+
+            <div class="research-item">
+              <h4>
+                <span class="text-emerald">◆</span>
+                FOSS Toolkits for Public Education &amp; NGOs
+              </h4>
+              <p>Delivering turn-key, zero-licensing digital toolkits for community libraries, schools, and non-profits that lack enterprise IT budgets.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Terminal Concept Preview -->
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">dxsl-terminal — bash — 80x24</span>
+            <span></span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">dxsl --info</span></div>
+            <div class="t-res">
+              [ORGANIZATION]  : DXSL Non-Profit Research Lab<br>
+              [STATUS]        : ACTIVE &bull; REGISTERED FOSS INITIATIVE<br>
+              [MISSION]       : Foundational Tech &bull; Digital Sovereignty<br>
+              [LICENSING]     : MIT / Apache-2.0 / Free Culture
+            </div>
+            <br>
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">dxsl list-projects</span></div>
+            <div class="t-res">
+              &gt; <span class="t-success">Cellos</span>    [OS]      - Microkernel based safe computing environment<br>
+              &gt; <span class="t-success">Buttre</span>    [IME]     - Zero-telemetry Vietnamese smart input engine<br>
+              &gt; <span class="t-success">Haily</span>     [AI]      - Privacy-focused personal cognitive assistant<br>
+              &gt; <span class="t-highlight">DXSL-Labs</span> [R&amp;D]     - Digital transformation open toolsets
+            </div>
+            <br>
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">dxsl get-involved --donate</span></div>
+            <div class="t-res">
+              &gt; Direct Ko-fi : <span class="t-highlight">https://ko-fi.com/dxsl_org</span><br>
+              &gt; 100% funds dedicated to open research &amp; public server hosting.
+            </div>
+            <br>
+            <div><span class="t-prompt">guest@dxsl-core:~$</span> <span class="t-cmd">_</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Open Source & Community Manifesto -->
+  <section id="opensource" class="section" style="background: rgba(9, 13, 22, 0.4);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// FOSS MANIFESTO &amp; COMMUNITY</span>
+        <h2 class="section-title">Co-Creating the Open Commons</h2>
+        <p class="section-desc">
+          The ultimate strength of free software lies in distributed peer review and community collaboration. Join our engineers, researchers, and users worldwide.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <h3 class="pillar-title">1. Code Contributions &amp; Fixes</h3>
+          <p class="pillar-desc">
+            Help advance the Cellos kernel, optimize the Buttre text-composition engine, or author new skills for the Haily assistant on our open repositories.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <h3 class="pillar-title">2. Documentation &amp; Peer Review</h3>
+          <p class="pillar-desc">
+            Author installation guides, translate documentation across languages, write independent security audits, and stress-test new releases.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <h3 class="pillar-title">3. Real-World Deployment</h3>
+          <p class="pillar-desc">
+            Deploy DXSL solutions across your daily workflow, school, or organization. Provide actionable feedback to push the ecosystem forward.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Donate Callout Banner -->
+  <section id="donate" class="section">
+    <div class="container">
+      
+      <div class="donate-highlight-box">
+        <div class="donate-content">
+          <span class="badge badge-violet" style="margin-bottom: 1rem;">PARTNER WITH DXSL</span>
+          
+          <h2 class="donate-title">
+            Support Our Mission for <span class="gradient-text">Public-Interest Tech</span>
+          </h2>
+
+          <p class="donate-desc">
+            DXSL operates strictly as a non-profit initiative. Your voluntary financial contributions directly subsidize continuous integration servers, hardware testing benches for Cellos, and keep Buttre and Haily free for millions of users worldwide.
+          </p>
+
+          <div class="donate-tiers-grid">
+            <div class="donate-tier-card">
+              <div class="tier-title">☕ A Cup of Coffee</div>
+              <div class="tier-desc">Fuel late-night engineering sprints optimizing kernel routines and resolving typing edge cases.</div>
+            </div>
+            <div class="donate-tier-card">
+              <div class="tier-title">🖥️ 1-Month Server Hosting</div>
+              <div class="tier-desc">Sustain build farm pipelines, repository mirrors, and high-speed package delivery worldwide.</div>
+            </div>
+            <div class="donate-tier-card">
+              <div class="tier-title">🚀 R&amp;D Hardware Patron</div>
+              <div class="tier-desc">Fund evaluation hardware, RISC-V development boards, and edge compute testing for open AI models.</div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            <a href="https://ko-fi.com/dxsl_org" target="_blank" rel="noopener noreferrer" class="btn btn-kofi">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+              </svg>
+              <span>Support on Ko-fi (ko-fi.com/dxsl_org)</span>
+            </a>
+
+            <a href="donate.html" class="btn btn-secondary">
+              <span>View Transparency &amp; Funding Policy</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Bio -->
+        <div class="footer-bio">
+          <a href="index.html">
+            <!-- [DXSL LOGO]: Replace logo placeholder path when ready -->
+            <img src="../assets/images/logo-placeholder.svg" alt="DXSL Logo" style="height: 38px;">
+          </a>
+          <p>
+            An independent non-profit foundation engineering foundational technologies, digital transformation models, and libre software for the global community.
+          </p>
+          <div class="badge badge-emerald">
+            <span>NON-PROFIT FOUNDATION</span>
+          </div>
+        </div>
+
+        <!-- Col 1: Products -->
+        <div>
+          <h4 class="footer-heading">Flagship Initiatives</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Cellos Operating System</a></li>
+            <li><a href="#products">Buttre Vietnamese IME</a></li>
+            <li><a href="#products">Haily AI Assistant</a></li>
+            <li><a href="#research">DXSL Digital Labs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Organization -->
+        <div>
+          <h4 class="footer-heading">Organization</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About DXSL</a></li>
+            <li><a href="#research">Research Focus</a></li>
+            <li><a href="#opensource">Open Source</a></li>
+            <li><a href="donate.html">Funding &amp; Transparency</a></li>
+            <li><a href="../index.html">Language Gateway</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Support & Donate -->
+        <div>
+          <h4 class="footer-heading">Support DXSL</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+            Help sustain our public build servers and open research:
+          </p>
+          <a href="https://ko-fi.com/dxsl_org" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-kofi" style="width: 100%; justify-content: center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.047 3.974-4.047 3.974s-2.793-2.513-4.047-3.974c-1.042-1.217-1.129-2.766-.192-3.824.974-1.099 2.586-.889 3.541.205.474.542.698.887.698.887s.224-.345.698-.887c.955-1.094 2.567-1.304 3.541-.205.937 1.058.85 2.607-.191 3.824zm6.374-1.696c-.332 1.823-1.897 1.884-2.822 1.885v-4.492c.934 0 2.49.07 2.822 1.885-.001.001 0 .722 0 .722z"/>
+            </svg>
+            <span>Support on Ko-fi</span>
+          </a>
+          <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono);">
+            Direct link: ko-fi.com/dxsl_org
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; DXSL Organization. All software and technical specifications released under permissive open-source licenses (MIT / Apache 2.0 / CC-BY-SA).
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="donate.html">Donate</a>
+          <a href="../vi/index.html">Tiếng Việt</a>
+          <a href="../index.html">Gateway</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/tech-canvas.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
